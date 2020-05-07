@@ -1,0 +1,1359 @@
+html{
+
+}
+
+
+
+
+body {
+
+	background-image: url(pics/bgbw.jpg);
+  background-size: 100%;
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+body{
+  background-image: url(pics/bgPhone.jpg);
+}
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+border-color: black;
+color: black; height: 10px;
+ background-color: black;
+ border-radius: 30px;
+
+}
+hr:hover{
+	border-color: gold;
+color: gold; height: 10px;
+ background-color: gold;
+ border-radius: 30px;
+transition-duration: 0.2s;
+}
+
+
+
+/******* DROPDOWN MENU *************/
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 1px;
+  text-decoration: none;
+  display: block;
+}
+
+.button{
+  background-color: gold;border: none;
+}
+.button:hover{
+  background-color: lavenderblush;
+}
+
+/****** PROVERBUL ********/
+ 
+.t1:hover{
+  color: red;
+}
+.t2:hover{
+  color: blue;
+}
+.t3:hover{
+  color:coral;
+}
+.t4:hover{
+  color:lawngreen;
+}
+.t5:hover{
+  color: lightsalmon;
+}
+.t6:hover{
+  color:gold;
+}
+.t7:hover{
+  color: indigo;
+}
+.t8:hover{
+  color: magenta;
+}
+.t9:hover{
+  color: olive;
+}
+.t10:hover{
+  color:tomato;
+}
+.t11:hover{
+  color: yellow;
+}
+.t12:hover{
+  color: steelblue;
+}
+.t13:hover{
+  color: seashell;
+}
+.t14:hover{
+  color: orchid;
+}
+
+.t15:hover{
+  color: navy;
+}
+.t16:hover{
+  color: lime;
+}
+.t17:hover{
+  color:orange;
+}
+.t18:hover{
+  color: pink;
+}
+.t19:hover{
+  color: brown;
+}
+.t20:hover{
+  color: blue;
+}
+.t21:hover{
+  color: lightseagreen;
+}
+.t22:hover{
+  color: firebrick;
+}
+.t23:hover{
+  color: chocolate;
+}
+.t24:hover{
+  color: blue;
+}
+.t25:hover{
+  color: cyan;
+}
+.t26:hover{
+  color: lightpink;
+}
+.t27:hover{
+  color: wheat;
+}
+.t28:hover{
+  color: palevioletred;
+}
+
+/******** Overlay over food images *************/
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: indianred;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+
+.text {
+  color: white;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: Papyrus,fantasy;  
+  text-align: center;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .text{
+    font-size: 7.5px;
+  }
+}
+
+
+.container {
+	position: relative;
+	display: inline-block;
+}
+
+.container:hover .overlay {
+  width: 50%;
+}
+
+
+/******POP-UP WINDOW************/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalShopping {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+
+/* Modal Content */
+.modal-content {
+  background: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 60%;
+}
+
+.modal-contentShopping {
+  background: rgba(0, 0, 0, 0.9);
+  margin: auto;
+  padding: 20px;
+  border: 10px solid gold;
+  width: 50%;
+  height: 75%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  overflow: auto;
+}
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+ ul.dots li.dots::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: 1em;
+}
+
+
+
+
+.ingrText{
+  color: gold;
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  font-size: 1.1vw;
+  margin-top: 1%;
+}
+
+
+.inputStyles{
+  color: green;
+  width: 3.2vw;
+  height: 1.4vw;
+  background-color: black;
+  border-color: tomato;
+  padding: 1.5%;
+  border-radius: 15px;
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+}
+
+.foodTitles{
+  font-size: 2vw;
+  color: white;
+  font-family: Papyrus,fantasy;
+}
+
+img.foodImages{
+  border-radius: 50%;
+  width: 10vw;
+  height: 9vw;
+  float: right;
+}
+
+.price{
+  color: green;
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+}
+
+.foodText{
+  color: tomato;
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+}
+
+
+
+
+/**************** ANIMATIONS *********/
+
+@keyframes shadow {
+  from {text-shadow: 1px 1px 2px darkred, 0 0 1em tomato, 0 0 1em tomato;}
+  to {text-shadow: 1px 1px 2px tomato, 0 0 1em darkred, 0 0 1em blue;}
+}
+
+
+@keyframes bird {
+
+  0%   { left:31%; top:6.5%; opacity: 1;}
+  15%  { left:45%; top:6.5%; opacity: 1;}
+  30%  { left:55%; top:6.5%; opacity: 1;}
+  45%  { left:67%; top:6.5%; opacity: 1;}
+  100% { opacity: 0 ;}
+  
+}
+
+@keyframes bird2 {
+
+  0% {opacity: -60;} 
+  60%  { left:67%; top:6.5%; opacity: 1;}
+  75%  { left:55%; top:6.5%; opacity: 1;}
+  90%  { left:45%; top:6.5%; opacity: 1;}
+  100% { left:31%; top:6.5%; opacity: 1;}
+  
+}
+
+
+@keyframes curtain{
+  0%   {  top:0%; right: 49%; opacity: 1;position: absolute;overflow: visible;}
+  10%  {  top:0%; right: 49%; opacity: 1;position: absolute;overflow: visible;}
+  15%  {  top:0%; right: 49%; opacity: 1;position: absolute;overflow: visible;}
+  20%  {  top:0%; right: 49%; opacity: 1;position: absolute;overflow: visible;}
+  25%  {  top:0%; right: 52%; opacity: 1;position: absolute;overflow: visible;}
+  30%  {  top:0%; right: 55%; opacity: 1;position: absolute;overflow: visible;}
+  35%  {  top:0%; right: 57%; opacity: 1;position: absolute;overflow: visible;}
+  40%  {  top:0%; right: 60%; opacity: 1;position: absolute;overflow: visible;}
+  45%  {  top:0%; right: 63%; opacity: 1;position: absolute;overflow: visible;}
+  50%  {  top:0%; right: 65%; opacity: 1;position: absolute;overflow: visible;}
+  55%  {  top:0%; right: 68%; opacity: 1;position: absolute;overflow: visible;}
+  60%  {  top:0%; right: 70%; opacity: 1;position: absolute;overflow: visible;}
+  65%  {  top:0%; right: 73%; opacity: 1;position: absolute;overflow: visible;}
+  70%  {  top:0%; right: 75%; opacity: 1;position: absolute;overflow: visible;}
+  75%  {  top:0%; right: 77%; opacity: 1;position: absolute;overflow: visible;}
+  80%  {  top:0%; right: 80%; opacity: 1;position: absolute;overflow: visible;}
+  85%  {  top:0%; right: 83%; opacity: 1;position: absolute;overflow: visible;}
+  90%  {  top:0%; right: 85%; opacity: 1;position: absolute;overflow: visible;}
+  95%  {  top:0%; right: 87%; opacity: 1;position: absolute;overflow: visible;}
+  100% {  top:0%; right: 90%; opacity: 1;position: absolute;overflow: visible;}
+}
+
+.leftCurtain{
+  position: absolute;
+  animation-name: curtain;
+  animation-duration: 2.5s;
+  left: -1000px; opacity: 0;
+}
+
+@keyframes curtain2{
+  0%   {  top:0%; left: 49%; opacity: 1;position: absolute;overflow: visible;}
+  10%  {  top:0%; left: 49%; opacity: 1;position: absolute;overflow: visible;}
+  15%  {  top:0%; left: 49%; opacity: 1;position: absolute;overflow: visible;}
+  20%  {  top:0%; left: 49%; opacity: 1;position: absolute;overflow: visible;}
+  25%  {  top:0%; left: 52%; opacity: 1;position: absolute;overflow: visible;}
+  30%  {  top:0%; left: 55%; opacity: 1;position: absolute;overflow: visible;}
+  35%  {  top:0%; left: 57%; opacity: 1;position: absolute;overflow: visible;}
+  40%  {  top:0%; left: 60%; opacity: 1;position: absolute;overflow: visible;}
+  45%  {  top:0%; left: 63%; opacity: 1;position: absolute;overflow: visible;}
+  50%  {  top:0%; left: 65%; opacity: 1;position: absolute;overflow: visible;}
+  55%  {  top:0%; left: 68%; opacity: 1;position: absolute;overflow: visible;}
+  60%  {  top:0%; left: 70%; opacity: 1;position: absolute;overflow: visible;}
+  65%  {  top:0%; left: 73%; opacity: 1;position: absolute;overflow: visible;}
+  70%  {  top:0%; left: 75%; opacity: 1;position: absolute;overflow: visible;}
+  75%  {  top:0%; left: 77%; opacity: 1;position: absolute;overflow: visible;}
+  80%  {  top:0%; left: 80%; opacity: 1;position: absolute;overflow: visible;}
+  85%  {  top:0%; left: 83%; opacity: 1;position: absolute;overflow: visible;}
+  90%  {  top:0%; left: 85%; opacity: 1;position: absolute;overflow: visible;}
+  95%  {  top:0%; left: 87%; opacity: 1;position: absolute;overflow: visible;}
+  100% {  top:0%; left: 90%; opacity: 1;position: absolute;overflow: visible;}
+}
+
+.rightCurtain{
+  position: absolute;
+  animation-name: curtain2;
+  animation-duration: 2.5s;
+  right:  -1000px;
+  opacity: 0;
+}
+
+@keyframes welcome{
+    0% {opacity: 1;top: 180%;}
+     20% {opacity: 1;top: 180%}
+      40% {opacity: 0.8;top: 180%}
+       60% {opacity: 0.6;top: 180%}
+        80% {opacity: 0;top: 180%}
+         100% {opacity: 0;top: 180%}
+}
+
+.welcomeAnim{
+  position: absolute;
+  font-size: 6.6vw;
+  color: black;
+  background-color: gold;
+  border-radius: 55%;
+  margin: auto;
+  padding: 50px;
+  width: 28%; 
+  top: -1000px;
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  opacity: 0;
+  animation-name: welcome ; 
+  animation-duration: 2s;
+  height: 550%;
+}
+
+/*******OVERLAY SHOPPING CART******/
+
+.overlay2 {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-image: url("pics/shopbg.jpg");
+  background-size:100%;
+  /*background-color: tomato; */
+  overflow-x: hidden;
+  transition: 0.6s;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .overlay2{
+    width: 20%;
+  }
+}
+.overlay2-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.7vw;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+
+}
+
+.overlay2 .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn {
+  font-size: 20px;
+  top: 15px;
+  right: 35px;
+  
+  }
+}
+
+
+.shopping_cart_title{
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+}
+
+
+.table_shopping_cart{
+
+}
+
+table.table_shopping_cart, th.table_shopping_cart, td.table_shopping_cart {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th.table_shopping_cart, td.table_shopping_cart {
+  padding: 15px;
+  text-align: left;
+}
+
+table.table_shopping_cart tr:nth-child(even) {
+  background-color: #eee;
+}
+table.table_shopping_cart tr:nth-child(odd) {
+ background-color: #fff;
+}
+table.table_shopping_cart th.table_shopping_cart {
+  background-color: black;
+  color: white;
+}
+
+.rmvBtn{
+  margin-top: 10%;
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  padding: 10px;
+}
+
+
+
+/*
+
+@keyframes bird {
+
+  0%    { left:31%; top:5.5%;}
+  15%  { left:38%; top:5.5%;}
+  30%  { left:43%; top:5.5%;}
+  45%  { left:50%; top:5.5%;}
+  60%  { left:55%; top:5.5%;}
+  75%  { left:60%; top:5.5%;}
+  90% { left:67%; top:5.5%;}
+  
+}
+
+@keyframes bird2 {
+
+  0%    { left:67%; top:5.5%;}
+  15%  { left:60%; top:5.5%;}
+  30%  { left:55%; top:5.5%;}
+  45%  { left:50%; top:5.5%;}
+  60%  { left:43%; top:5.5%;}
+  75%  { left:38%; top:5.5%;}
+  90% { left:31%; top:5.5%;}
+  
+}
+
+*/
+
+
+
+
+.proverb{
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  font-size: 2.3vw;
+  left: 30%;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  letter-spacing: -4px;
+  color: gold;
+  animation-name: shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; 
+  width: 40%;
+  cursor:pointer;
+}
+ @media all and (max-width: 1200px) and (min-width: 200px) and (max-width: 1800px){
+  /* For mobile phones:*/
+  .proverb {
+    font-size: 22px;
+    letter-spacing: -4.5px;
+    text-align: center;
+  }
+}
+
+
+.mainbox {
+  position: absolute; 
+  width: 50%;
+  height: 66% ; 
+  left: 24%;
+  top: 31%; 
+  background-image: url(pics/bg2.jpg); 
+  opacity: 0.3 ;
+  border: 10px solid black;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  /* For mobile phones: */
+  .mainbox {
+    left: 22%;
+    font-size: 25px;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    height: 82vw;
+  }
+}
+
+.boyPic{
+  width: 15vw;
+  height: 15vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+.boyPic{
+  width: 28vw;
+  height: 28vw;
+}
+}
+
+
+table{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+
+table{
+  width: 50%;
+}
+}
+
+
+.logoTableCell {
+  padding-left: 18vw; 
+  padding-right: 18vw; 
+  padding-bottom: 59vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+.logoTableCell{
+padding-bottom: 650px;
+}
+}
+.logoTableCell_menu {
+  padding-left: 18vw; 
+  padding-right: 18vw; 
+  padding-bottom: 9.7vw;
+}
+
+
+
+
+
+.logoImg{
+  border-radius: 50px;
+  opacity: 0.8;
+  width: 37.3vw;
+  
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .logoImg{
+    display: none;
+  }
+}
+
+.curtainImg{
+  width: 12vw;
+  height: 90vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .curtainImg{
+    display: none;
+  }
+}
+
+.curtainImg_menu{
+  width: 12vw;
+  height: 200vw;
+}
+
+
+
+
+.mealsBox{
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2), 0 20px 40px 25px rgba(0, 0, 0, 0.30);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+.mealsBox{
+  top: 47%;
+  left: 27%;
+}
+}
+
+.mealsPics{
+  width: 18.5vw;
+  height: 13vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .mealsPics{
+    width: 20vw;
+    height: 15vw;
+  }
+}
+.commentSection{
+  top: 37%;
+  left: 33%;
+  position: absolute;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .commentSection{
+    left: 24.5%;
+  }
+}
+
+.comment:hover{
+   text-shadow: 1px 1px 1px white;
+}
+
+.commentPic{
+
+  position: absolute;
+}
+
+
+.commentPicSize{
+  width: 12vw;
+  height: 10vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .commentPicSize{
+    width: 19vw;
+    height: 17vw;
+  }
+}
+
+.comment{
+  padding-top: 35%;
+  padding-left: 35px;
+  position: relative;
+  text-align: center;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  color: gold;
+  font-size: 1vw;
+  cursor:pointer;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .comment{
+    padding-left: 13px;
+    font-size: 1.9vw;
+  }
+}
+
+.RightBird{
+  position: absolute;
+  animation-name: bird;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .RightBird{
+    display: none;
+  }
+}
+.LeftBird{
+position: absolute;
+  animation-name: bird2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .LeftBird{
+    display: none;
+  }
+}
+
+.BirdSize{
+width: 6vw;
+height: 6vw;
+}
+
+.navEdit{
+  
+}
+
+.ChefLogo{
+  width: 4vw;
+  height: 4vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .ChefLogo{
+    display: none;
+  }
+}
+
+.shoppingCart{
+  position: absolute; 
+  right: 3%; 
+  top: 10%;
+  cursor:pointer;
+  font-size: 1.3vw;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+
+.shoppingCartPic{
+  width: 60px;
+  height: 55px;
+}
+
+.shoppingCartPic2{
+  width: 55px;
+  height: 60px;
+}
+
+.shoppingCartText{
+  font-size: 1vw;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+
+.shoppingCartButton{
+  height: 50px; 
+  width: 50%;
+}
+
+
+.footer{
+  background: rgba(105,105,105, 0.4);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+
+
+/************FOOD GALLERY***********/
+div.gallery {
+  border: 1.5px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1.5px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 22.99999%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.foodBtn{
+  background-color: white;color: black;padding: 2%;border-color: black;border-radius: 10px;width: 5vw;font-size: 1vw;
+}
+
+.foodBtn:hover {
+  background-color: gold;
+}
+
+.infoBtn{
+  border-color: indianred;
+  background-color: indianred;
+  border-radius: 20px;
+  height: 1.8vw;
+}
+
+.verticalText{
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: white;
+  font-size: 1.5vw;
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+}
+
+
+
+
+
+
+/************************************/
+
+.proverb2{
+  background-color: gold;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border: 2px solid black;
+  font-size: 2vw;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1%;
+  font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+}
+
+.category{
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding: 1%;
+  margin-bottom: 2%;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.8vw;
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  letter-spacing: 4px;
+  margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+/****************CONTACTS PAGE*******************/
+
+.mainword{
+width: 20%;
+height: 5vh;
+margin: auto;
+border: 5px solid black;
+background-color: black;
+text-align: center;
+padding: 20px;
+font-size: 2vw;
+border-radius: 50vw;
+margin-top: 5%;
+border-left-color: white;
+border-right-color: white;
+border-bottom-color: gold;
+border-top-color: gold;
+color: aliceblue;
+font-family: Papyrus,fantasy;
+box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.8), 0 20px 40px 20px rgba(0,0,0, 0.1);
+}
+
+.mainword:hover{
+  background-color: gold;
+  border-bottom-color: black;
+border-top-color: black;
+color: black;
+transition-duration: 0.8s;
+cursor: pointer;
+
+}
+
+.insta{
+  position: absolute;
+  margin-left: 5%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
+  border-radius: 3.8vw;
+}
+
+.facebook{
+  position: absolute;
+  margin-left: 80%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
+}
+
+.map{
+position: absolute;
+  margin-top: 20%;
+  margin-left: 5%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
+  border-radius: 3.8vw;
+}
+
+.ceo{
+position: absolute;
+  margin-left: 80%;
+  margin-top: 20%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
+  border-radius: 1vw;
+}
+
+
+.insta:hover , .facebook:hover , .map:hover, .ceo:hover, .logoedit6:hover {
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 1);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.mainDiv{
+  margin-top: 8%;
+}
+
+
+@media only screen and (max-width: 900px) {
+.mainDiv {
+margin-top: 45%;
+}
+}
+
+
+.sendBtn{
+padding: 5px;
+background-color: black;
+border-color: gold;
+border-radius: 50vw;
+outline: 0;
+}
+
+.resetBtn{
+padding: 5px;
+background-color: black;
+border-color: gold;
+outline: 0;
+}
+
+.sendBtn:hover, .resetBtn:hover{
+  background-color: gold;
+  border-color: black;
+  transition-duration: 0.3s;
+  color: black;
+  padding: 8px;
+}
+
+
+.textArea{
+  height: 10vw;
+  width: 35vw;
+  color: black;
+}
+
+.insideForm{
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  font-size: 1.5vw;
+}
+
+  .formDiv{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    border: 5px solid black;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 5.5%;
+    text-align: center;
+    padding: 1%;
+    border-right-color: white;
+    border-left-color: white;
+    border-top-color: gold;
+    border-bottom-color: gold;
+    color: aliceblue;
+    border-radius: 5vw;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.8), 0 20px 40px 20px rgba(0,0,0, 0.3);
+  }
+
+  .leftStick{
+width: 0.1rem;
+height: 5vw;
+border: 5px solid black;
+background-color: white;
+margin: auto;
+float: left;
+margin-left: 45%;
+border-top-color: gold;
+border-bottom-color: gold;
+  }
+
+  .rightStick{
+width: 0.1rem;
+height: 5vw;
+border: 5px solid black;
+background-color: white;
+margin: auto;
+float: right;
+margin-right: 45%;
+border-top-color: gold;
+border-bottom-color: gold;
+  }
+
+  .second_mainDiv{
+    margin-bottom: 6%;
+    margin-top: 8%;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  }
+
+/************CAREER PAGE************/
+
+.logoedit6{
+  position: absolute;
+  margin-left: 32.5%;
+  margin-top: 6%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
+  border-radius: 50vw;
+}
+
+.inputbox{
+  width: 34vw;
+  border-radius: 1vw;
+  padding: 1.5%;
+  display: block;
+  border: 1px solid #d8d8d8;
+  outline: 0;
+}
+
+.textinput{
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10px;
+}
+
+.checkbox{
+    height: 1.5vw;
+    min-width: 2.5vw;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid #d8d8d8;
+    background-color: #fff;
+    border-radius: 5px;
+    float: left;
+
+}
+
+.sendButton{
+  width: 15vw;
+  height: auto;
+  padding: 2%;
+  background-color: gold;
+  border-radius: 1vw;
+  border: 1px solid #d8d8d8;
+  margin-top: 30%;
+  font-size: 2vw;
+  outline: 0;
+}
+
+.sendButton:hover{
+  transition-duration: 1s;
+ background-color: goldenrod;
+ cursor: pointer;
+ font-size: 2.2vw;
+ padding: 1.8%;
+}
+
+
+.mainImages{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+.mainImages {
+margin-top: 41%;
+}
+}
+
+.careerImages{
+  float: left;
+  width: 49.3vw;
+  filter: blur(3px);
+}
+
+
+.CAREER{
+  position: absolute;
+  font-size: 7vw; 
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  color: aliceblue;
+  margin-top: 20%;
+  margin-left: 1%;
+  letter-spacing: 0.4vw;
+  text-decoration: underline;
+  text-decoration-color: gold;
+}
+
+.main_career_div{
+  width: 70vw;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  border: 5px solid black;
+  margin-top:30%;
+  overflow: auto;
+  margin-bottom: 5%;
+  padding: 1%;
+  border-radius: 1vw;
+}
+
+.personal_data_div{
+  width: 55vw;
+  height: auto;
+  padding: 1%;
+  background-color: #f1f1f1;
+  margin: auto;
+  border: 1px solid #d8d8d8;
+  margin-top: 2%;
+  font-size: 1.3vw;
+  border-radius: 1vw;
+}
+
+.personal_data_text{
+  width: 28%;
+  float: left;
+}
+
+.personal_data_main_word{
+  font-size: 1.8vw;
+}
+
+.redStar{
+  font-weight: 800;
+  font-size: 2vw;
+  color: red;
+}
+
+.jobs_div{
+  width: 55vw;
+  height: auto;
+  padding: 1%;
+  background-color: #f1f1f1;
+  margin: auto;
+  border: 1px solid #d8d8d8;
+  margin-top: 2%;
+  font-size: 1.3vw;
+  border-radius: 1vw;
+}
+
+.jobs_main_word{
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.job_related{
+  width: 10vw;
+  height: auto;
+  padding: 2%;
+  background-color: #f1f1f1;
+  border: 1px solid #d8d8d8;
+  margin-top: 3%;
+  font-size: 1.3vw;
+  border-radius: 1vw;
+  padding-top: 10%;
+}
+
+.jobs_related_main_words{
+font-size: 1.4vw;
+}
+
+.jobs_related_div_1{
+  float: left;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.jobs_related_div_2{
+float: left;
+margin-top: 2.5%;
+margin-left: 11%;
+}
+
+.jobs_related_div_3{
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 10%;
+}
+
+
+/**********HIDE EVERYTHING******/
+.hiddenText{
+  width: 50vw;
+  height: 50vw;
+  background-color: black;
+  font-size: 10vw;;
+  color: white;
+  margin: auto;
+  border: 1px solid black;
+  display: none;
+  text-align: center;
+  padding: 20%;
+  align-items: center;
+  margin-bottom: 50%;
+  margin-top: 50%;
+  border-radius: 40vw;
+  font-family: Papyrus,fantasy;
+  border: 3px solid white;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+.hiddenText {
+display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+.hide-on-mobile-only {
+display: none !important; 
+}
+

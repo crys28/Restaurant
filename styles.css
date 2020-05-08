@@ -306,6 +306,7 @@ transition-duration: 0.2s;
   padding: 1.5%;
   border-radius: 15px;
   font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  outline: 0;
 }
 
 .foodTitles{
@@ -446,8 +447,9 @@ img.foodImages{
   font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
   opacity: 0;
   animation-name: welcome ; 
-  animation-duration: 2s;
+  animation-duration: 4s;
   height: 550%;
+  border: 3px solid white;
 }
 
 /*******OVERLAY SHOPPING CART******/
@@ -951,13 +953,32 @@ div.desc {
   background-color: gold;
   margin-top: 5%;
   margin-bottom: 2%;
-  border: 2px solid black;
+  border: 3px solid black;
   font-size: 2vw;
   border-radius: 30px;
   text-align: center;
   padding: 1%;
   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  cursor: pointer;
+  border-left-color: gold;
+  border-right-color: gold;
 }
+
+.proverb2:hover{
+  background-color: goldenrod;
+  border-left-color: black;
+  border-right-color: black;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-bottom-left-radius: 50vw;
+  border-bottom-right-radius: 50vw;
+  transition-duration: 2s;
+  transform: translate(0,11%);
+
+
+}
+
+
 
 .category{
   width: 100%;
@@ -1231,7 +1252,14 @@ margin-top: 41%;
   letter-spacing: 0.4vw;
   text-decoration: underline;
   text-decoration-color: gold;
+  cursor: pointer;
 }
+
+.CAREER:hover{
+  transform: translate(10%);
+  transition-duration: 2s;
+}
+
 
 .main_career_div{
   width: 70vw;

@@ -91,7 +91,7 @@ document.getElementById("OribuyBtn40").addEventListener("click", Alert);
    if(msg == null){
    	alert(":(")
    } else {
-    var rez = alert( "În curând o să vă contacte un operator pentru a finaliza comanda");
+    var rez = alert( "În curând o să vă contacteze un operator pentru a finaliza comanda");
 }
 
 }

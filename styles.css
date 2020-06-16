@@ -2,8 +2,32 @@ html{
 
 }
 
+/**********SCROLLBAR*************/
 
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+  background-color: darkred;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: goldenrod; 
+}
+
+/***********************/
 
 body {
 
@@ -201,6 +225,7 @@ transition-duration: 0.2s;
 .container {
 	position: relative;
 	display: inline-block;
+  height: 19vh;
 }
 
 .container:hover .overlay {
@@ -236,6 +261,12 @@ transition-duration: 0.2s;
   overflow: auto; /* Enable scroll if needed */
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .modalShopping{
+    width: 150%;
+  }
+}
+
 
 /* Modal Content */
 .modal-content {
@@ -247,6 +278,9 @@ transition-duration: 0.2s;
   height: 60%;
 }
 
+
+
+
 .modal-contentShopping {
   background: rgba(0, 0, 0, 0.9);
   margin: auto;
@@ -257,6 +291,13 @@ transition-duration: 0.2s;
   border-bottom-right-radius: 25%;
   border-bottom-left-radius: 25%;
   overflow: auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .modal-contentShopping{
+    margin-left: 2%;
+  }
 }
 
 
@@ -391,7 +432,8 @@ img.foodImages{
   position: absolute;
   animation-name: curtain;
   animation-duration: 2.5s;
-  left: -1000px; opacity: 0;
+  left: -1000px; 
+  opacity: 0;
 }
 
 @keyframes curtain2{
@@ -426,29 +468,31 @@ img.foodImages{
 }
 
 @keyframes welcome{
-    0% {opacity: 1;top: 180%;}
-     20% {opacity: 1;top: 180%}
-      40% {opacity: 0.8;top: 180%}
-       60% {opacity: 0.6;top: 180%}
-        80% {opacity: 0;top: 180%}
-         100% {opacity: 0;top: 180%}
+    0% {opacity: 1;top: 40%;}
+     20% {opacity: 1;top: 40%}
+      40% {opacity: 0.8;top: 40%}
+       60% {opacity: 0.6;top: 40%}
+        80% {opacity: 0;top: 40%}
+         100% {opacity: 0;top: 40%}
 }
 
 .welcomeAnim{
   position: absolute;
-  font-size: 6.6vw;
+  text-align: center;
+  font-size: 6vw;
   color: black;
   background-color: gold;
   border-radius: 55%;
-  margin: auto;
-  padding: 50px;
-  width: 28%; 
   top: -1000px;
+  margin-top: 5%;
+  margin-left: -2%;
+  padding: 50px;
+  width: 30vw; 
   font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
   opacity: 0;
   animation-name: welcome ; 
   animation-duration: 4s;
-  height: 550%;
+  height: 30vw;
   border: 3px solid white;
 }
 
@@ -526,9 +570,21 @@ img.foodImages{
   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .shopping_cart_title {
+   font-size: 5vw;
+  }
+}
+
 
 .table_shopping_cart{
 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .table_shopping_cart {
+   width: 100%;
+  }
 }
 
 table.table_shopping_cart, th.table_shopping_cart, td.table_shopping_cart {
@@ -555,8 +611,31 @@ table.table_shopping_cart th.table_shopping_cart {
   margin-top: 10%;
   font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
   padding: 10px;
+  border-radius: 5px;
+  outline: none;
 }
 
+.rmvBtn:hover{
+  background-color: black;
+  transition-duration: 0.5s;
+  border: 1px solid gold;
+  color: aliceblue;
+}
+
+
+.openCartBtn{
+  height: 50px; 
+  width: 50%;
+  border-radius: 2vw;
+  outline: none;
+}
+
+.openCartBtn:hover{
+  background-color: black;
+  transition-duration: 0.5s;
+  border: 1px solid gold;
+  color: aliceblue;
+}
 
 
 /*
@@ -620,8 +699,7 @@ table.table_shopping_cart th.table_shopping_cart {
   width: 50%;
   height: 66% ; 
   left: 24%;
-  top: 31%; 
-  background-image: url(pics/bg2.jpg); 
+  top: 31%;  
   opacity: 0.3 ;
   border: 10px solid black;
 }
@@ -711,7 +789,11 @@ padding-bottom: 650px;
   height: 200vw;
 }
 
-
+@media only screen and (max-width: 1200px) and (min-width: 200px){
+  .curtainImg_menu{
+    display: none;
+  }
+}
 
 
 .mealsBox{
@@ -837,7 +919,17 @@ height: 6vw;
   cursor:pointer;
   font-size: 1.3vw;
   font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  width: 5vw;
+  height: auto;
 }
+.shoppingCart:hover{
+  border: 1px solid white;
+  transition-duration: 0.1s;
+  background-color: white;
+  border-radius: 50vw;
+}
+
+
 
 .shoppingCartPic{
   width: 60px;
@@ -874,6 +966,14 @@ div.gallery {
   border: 1.5px solid #ccc;
 }
 
+@media only screen and (max-width: 1200px) {
+  div.gallery {
+    margin-top: 0%;
+  }
+}
+
+
+
 div.gallery:hover {
   border: 1.5px solid #777;
 }
@@ -889,6 +989,13 @@ div.desc {
   background-color: white;
 }
 
+@media only screen and (max-width: 1200px) {
+  div.desc {
+    
+  }
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -902,13 +1009,13 @@ div.desc {
 @media only screen and (max-width: 1200px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 10px 0;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .responsive {
-    width: 100%;
+    width: 200%;
   }
 }
 
@@ -919,8 +1026,24 @@ div.desc {
 }
 
 .foodBtn{
-  background-color: white;color: black;padding: 2%;border-color: black;border-radius: 10px;width: 5vw;font-size: 1vw;
+  background-color: white;
+  color: black;
+  padding: 2%;
+  border-color: black;
+  border-radius: 10px;
+  width: 5vw;
+  font-size: 1vw;
 }
+
+@media only screen and (max-width: 1200px) {
+  .foodBtn {
+    font-size: 3vw;
+    width: 8vw;
+    height: 7vw;
+    padding: 10%;
+  }
+}
+
 
 .foodBtn:hover {
   background-color: gold;
@@ -931,6 +1054,13 @@ div.desc {
   background-color: indianred;
   border-radius: 20px;
   height: 1.8vw;
+  outline: none;
+}
+
+.infoBtn:hover{
+  background-color: white;
+  transition-duration: 0.1s;
+  transform: scale(1.1);
 }
 
 .verticalText{
@@ -964,6 +1094,15 @@ div.desc {
   border-right-color: gold;
 }
 
+@media only screen and (max-width: 1200px) {
+  .proverb2 {
+    margin-top: 85%;
+    margin-left: 55%;
+    width: 100%
+  }
+}
+
+
 .proverb2:hover{
   background-color: goldenrod;
   border-left-color: black;
@@ -991,6 +1130,7 @@ div.desc {
   font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
   letter-spacing: 4px;
   margin-top: 3%;
+  position: relative;
 }
 
 
@@ -1172,7 +1312,7 @@ border-bottom-color: gold;
 .logoedit6{
   position: absolute;
   margin-left: 32.5%;
-  margin-top: 6%;
+  margin-top: -28%;
   box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.7), 0 20px 40px 20px rgba(192,192,192, 0.5);
   border-radius: 50vw;
 }
@@ -1185,6 +1325,12 @@ border-bottom-color: gold;
   border: 1px solid #d8d8d8;
   outline: 0;
 }
+
+.inputbox:focus{
+  border: 1px solid darkgray;
+  transition-duration: 0.5s;
+}
+
 
 .textinput{
   border-bottom: 1px solid #d8d8d8;
@@ -1247,7 +1393,7 @@ margin-top: 41%;
   font-size: 7vw; 
   font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
   color: aliceblue;
-  margin-top: 20%;
+  margin-top: -12%;
   margin-left: 1%;
   letter-spacing: 0.4vw;
   text-decoration: underline;
@@ -1257,7 +1403,7 @@ margin-top: 41%;
 
 .CAREER:hover{
   transform: translate(10%);
-  transition-duration: 2s;
+  transition: all 2s;
 }
 
 
@@ -1267,7 +1413,7 @@ margin-top: 41%;
   margin: auto;
   background-color: white;
   border: 5px solid black;
-  margin-top:30%;
+  margin-top:0%;
   overflow: auto;
   margin-bottom: 5%;
   padding: 1%;
@@ -1352,6 +1498,47 @@ margin-left: 11%;
 }
 
 
+/*******SLIDEWHOW****/
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
 /**********HIDE EVERYTHING******/
 .hiddenText{
   width: 50vw;
@@ -1379,9 +1566,58 @@ margin-left: 11%;
 .hiddenText {
 display: flex;
 }
-
+}
 @media only screen and (max-width: 900px) {
 .hide-on-mobile-only {
 display: none !important; 
 }
+}
 
+
+
+/********back TO TOP*********/
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+  transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 900px) {
+#topBtn {
+opacity: 0;
+}
+}
+
+
+/*****MAINBOX - VIDEO****/
+
+/*.web-cam { 
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}*/
+
+video {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  z-index: -100;
+}
